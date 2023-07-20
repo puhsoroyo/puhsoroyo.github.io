@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuhSoroYo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('teams')">Teams</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Welcome to our Esport Website</h1>
+                <p>Stay updated with the latest esports news and teams.</p>
+                <a href="#" class="btn">Explore Teams</a>
+            </div>
+            <div class="container">
+                <h2>About Us - Puhsoroyo</h2>
+                <p>Halo, kami adalah Puhsoroyo, sebuah kelompok yang terdiri dari 12 orang yang penuh semangat dan keceriaan. Anggota kami antara lain:</p>
+                <ul>
+                    <li>Achmad Farhan Ghufroni</li>
+                    <li>Bima Afandi</li>
+                    <li>Imanuel Albert Caezar Subroto</li>
+                    <li>Jeffri Jayyid Ash Shiddiqi</li>
+                    <li>Lionel Harahap Saputra</li>
+                    <li>Muhammad Badrut Tamam</li>
+                    <li>Muhammad Davin Saputra</li>
+                    <li>Muhammad Oki Romadhoni</li>
+                    <li>Naufaldo Gustama</li>
+                    <li>Pinastiko Ari Wanto</li>
+                    <li>Ramadani</li>
+                    <li>Sheva Carvey Adi Reswara</li>
+                </ul>
+                <p>Kami semua adalah siswa SMKN 3 Jember dan saat ini kami tengah mengambil jurusan Teknik Komputer dan Jaringan (TKJ). Kami telah mencapai tahap akhir perjalanan pendidikan kami di sekolah ini karena sekarang kami berada di kelas 12.</p>
+                <p>Selain berfokus pada pendidikan, kami juga memiliki hobi yang sama, yaitu bermain game. Kami sangat menikmati berbagai jenis permainan, mulai dari game kompetitif hingga game kolaboratif. Bermain game menjadi cara kami untuk bersenang-senang dan saling berinteraksi di luar lingkungan sekolah.</p>
+                <p>Dalam kelompok Puhsoroyo, kami selalu berusaha untuk bekerja sama dan saling mendukung satu sama lain. Kami percaya bahwa kerja tim dan kebersamaan merupakan kunci keberhasilan dalam mencapai tujuan kami.</p>
+                <p>Itulah sedikit gambaran tentang kami, Puhsoroyo, kelompok yang bersemangat, ceria, dan senang bermain game. Semoga perkenalan singkat ini memberikan informasi mengenai kami dan semangat kami dalam menjalani kehidupan di sekolah dan di luar sekolah. Terima kasih!</p>
+            </div>
+        </section>
+
+        <section id="teams">
+          <div class="container">
+              <h2>Our Team</h2>
+              <div class="team-member">
+                  <img src="foto1.jpg">
+              </div>
+              <div class="team-member">
+                  <img src="foto2.jpg">
+              </div>
+              <!-- Tambahkan div team-member dan foto untuk setiap anggota -->
+          </div>
+      </section>
+      
+      
+      
+        <section id="contact" style="display: none;">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Follow us on Instagram: <a href="https://instagram.com/puhsoroyo?igshid=MzNlNGNkZWQ4Mg==">@puhsoroyo</a>&nbsp;&nbsp;&nbsp;Email: <a href="mailto:puhsoroyo@gmail.com">puhsoroyo@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showPage(pageId) {
+            // Semua bagian halaman disembunyikan terlebih dahulu
+            var sections = document.querySelectorAll('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            // Tampilkan bagian halaman yang sesuai dengan tautan yang ditekan
+            var selectedSection = document.getElementById(pageId);
+            selectedSection.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
